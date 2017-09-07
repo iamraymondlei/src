@@ -1,0 +1,6 @@
+.legend table {
+  border-spacing: 5px;
+}
+
+.legend table tr{ height: 25px; }
+.legend table .legendLabel{ text-indent: 1em; }

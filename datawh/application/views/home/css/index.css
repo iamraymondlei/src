@@ -1,0 +1,103 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+
+.form-signin  .form-input-area{
+  height:105px;
+}
+
+.form-signin .checkbox {
+  font-weight: normal;
+}
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="username"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#divMall, #divSelectShop, #loginGo{
+  display: none;
+}
+
+#divSelectShop .dropdown-menu{
+  min-width: 265px;
+}
+
+.form-signin input[disabled]{
+  border: 1px solid #ccc;
+  background: #f6f6f6;
+}
+
+.indexBg{
+  background:url(../images/index_bg.jpg) no-repeat fixed top;
+  background-size: cover;
+}
+
+.loginBg{
+  background:url(../images/index_login_bg.jpg) no-repeat fixed top;
+  background-size: cover;
+}
+
+.form-signin-header .indexLogo{
+  text-align: center;
+  margin:0 auto;
+}
+
+.form-signin-header .form-signin-heading{
+  color: white;
+  text-align: center;
+  font-size: 26px;
+}
+
+.form-signin-header h2{
+  font-family: 微軟雅黑;
+}
+
+.form-signin{
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 6px #666; 
+  -moz-box-shadow: 3px 3px 6px #666; 
+  box-shadow: 3px 3px 6px #666; 
+  -moz-border-radius: 0.5em; 
+  -webkit-border-radius: 0.5em; 
+  border-radius: 0.5em; 
+  padding:30px;
+}
+
+.form-input-area input{
+  background-color:#f1f1f1;
+}
