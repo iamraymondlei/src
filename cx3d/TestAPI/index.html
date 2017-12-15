@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.0.min.js" ></script>
+    <script src="urlParams-1.0.0.js" ></script>
+</head>
+<body>
+    <h1>welcome to chuxiong3d</h1>
+    <p></p>
+</body>
+<script>
+    $(function () {
+        var code = $.urlParams("get", "code");
+        $.ajax({
+            url: "test.php",
+            type: 'GET',
+            data:{
+                code: code
+            },
+            dataType: 'json',
+            async: false,
+            success: function(json) {
+                $("p").append(JSON.stringify(json));
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+
+            }
+        });
+    });
+</script>
+</html>

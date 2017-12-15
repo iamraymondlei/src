@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//data.qojet.local/piwik/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '1']);
+            _paq.push(['trackAllContentImpressions']);
+            _paq.push(['trackVisibleContentImpressions']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <script src="http://data.qojet.local/chuxiong3d/public/plugins/jquery/jquery-1.12.0.min.js"></script>
+    <!-- End Piwik Code -->
+    <meta charset="UTF-8">
+    <title>Page1</title>
+</head>
+<body>
+    <h1>welcome to page1</h1>
+    <p><a href="../../../index.html">back to home</a></p>
+    <p style="cursor: pointer;" onclick="openHS1()" data-track-content data-content-name="My Hotspot1" data-content-piece="Click" >hotspot1</p>
+    <div>
+        <form id="upload-form" action="http://data.qojet.local/chuxiong3d/ws/SetEmployeeData.php" method="post" enctype="multipart/form-data" >
+            ID：<input type="text" id="userId" name="id" /> <br />
+            視頻：<input type="text" id="video" name="videoUrl" /> <br />
+            內容：<input type="text" id="content" name="content" /> <br />
+            圖片：<input type="file" id="upload" name="files" accept="image/gif,image/jpeg,image/png" /> <br />
+            <input type="submit" value="提交" />
+        </form>
+    </div>
+    <script>
+        function openHS1() {
+            alert("hotspot1");
+        }
+    </script>
+</body>
+</html>
